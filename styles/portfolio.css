@@ -29,9 +29,7 @@ h1 {
 h2 {
   font-size: 64px;
 }
-nav {
-  background-color: var(--primary-color);
-}
+
 P {
   font-weight: 500;
   font-style: normal;
@@ -82,9 +80,6 @@ content {
   margin: 30px;
 }
 
-.navigation-links a {
-  margin: 20px;
-}
 .btn-branding {
   background-color: var(--branding-color);
   border-radius: 30px;
@@ -101,6 +96,33 @@ content {
   line-height: 27px;
   padding: 15px 30px;
 }
+.logo {
+  max-height: 40px;
+}
+nav {
+  background-color: var(--primary-color);
+  padding: 20px 0;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+nav li {
+  display: inline;
+  list-style: none;
+  line-height: 42px;
+  margin-left: 15px;
+}
+nav a:hover,
+nav li.active a {
+  color: var(--branding-color);
+}
+nav a {
+  text-decoration: none;
+  color: #272142;
+  transition: all 150ms ease-in-out;
+}
+
 .project-description {
   padding: 120px 60px;
 }
@@ -127,4 +149,3 @@ content {
     padding: 0;
     text-align: center;
   }
-}
